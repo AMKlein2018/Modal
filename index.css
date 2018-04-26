@@ -1,0 +1,205 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+.wrapper {
+	/*width: 100%;
+	margin: 0 auto;*/
+	border: 2px solid black;
+	display: grid;
+	grid-template-columns: 1fr 500px 500px 1fr;
+	/*grid-column-gap: 5px;
+	grid-row-gap: 5px;*/
+	grid-gap: 6px;
+	/*grid-template-rows: 300px 300px 300px;*/
+	background-color: lightblue;
+	/*padding-top: 75px;*/
+	grid-template-areas:
+	" . box1 box1 . "
+	" . navbar navbar ."
+	" . box2 box3 ."
+	" . box2 box3 ."
+	" . box4 box5 ."
+	" . box4 box5 ."
+	" . box6 box6 ."
+
+}
+
+
+.segalcontent {
+	text-align: center;
+	color: red;
+
+}
+
+.segalcontent p {
+	font-size: 30px;
+}
+
+
+.navbar {
+	grid-area: navbar;
+	border: 2px solid black;
+	height: 50px;
+	display: inline-block;
+	font-size: 30px;
+	padding-left: 10px;
+	padding-right: 10px;
+	justify-self: center;
+	word-spacing: 5px;
+}
+
+
+#myModal {
+	display: none;
+	background-color: lightgreen;
+	position: fixed;
+	left: 400px;
+	top: 200px;
+	z-index: 1;
+}
+
+.modal-header {
+
+
+}
+
+.close {
+	background-color: lightblue;
+
+}
+
+
+.box1 {
+	grid-area: box1;
+	border: 2px solid black;
+	justify-self: center;
+	background-color: lightgrey;
+	width: 100%;
+	text-align: center;
+
+
+}
+
+.header {
+	color: red;
+	height: 100px;
+	text-shadow: 2px 2px black;
+	font-size: 75px
+
+
+}
+
+.box2 {
+	grid-area: box2;
+	border: 2px solid black;
+	
+}
+
+.image1 {
+	position: relative;
+	left: 30px;
+}
+
+.comments1 {
+	text-align: center;
+	font-size: 40px;
+	font-style: italic;
+	color: red;
+
+
+}
+
+.box3 {
+	grid-area: box3;
+	border: 2px solid black;
+	
+}
+
+.comments2 {
+	font-size: 30px;
+	font-style: italic;
+	color: red;
+	float: right;
+	margin-right: 10px;
+	margin-top: 100px;
+
+
+}
+
+
+.box4 {
+	grid-area: box4;
+	border: 2px solid black;
+	
+}
+
+.comments3 {
+	font-size: 30px;
+	font-style: italic;
+	color: red;
+	float: left;
+	margin-left: 80px;
+	margin-top: 10px;
+
+}
+
+
+
+.box5 {
+	grid-area: box5;
+	border: 2px solid black;
+	
+}
+
+.comments4 {
+	font-size: 30px;
+	font-style: italic;
+	color: red;
+	float: left;
+	margin-left: 100px;
+	margin-top: 30px;
+
+}
+
+
+
+.box6 {
+	grid-area: box6;
+	border: 2px solid black;
+}
+
+
+@media screen and (max-width: 762px;){
+
+	/*width: 100%;
+	margin: 0 auto;*/
+	border: 2px solid black;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	/*grid-column-gap: 5px;
+	grid-row-gap: 5px;*/
+	grid-gap: 6px;
+	/*grid-template-rows: 300px 300px 300px;*/
+	background-color: lightblue;
+	/*padding-top: 75px;*/
+	grid-template-areas:
+	" box1 box1 "
+	" navbar navbar"
+	" box2 box3 "
+	" box2 box3 "
+	" box4 box5 "
+	" box4 box5 "
+	" box6 box6 "
+
+}
+
+
+
+
+
+
+
+
+	
